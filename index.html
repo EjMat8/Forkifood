@@ -4,10 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>ReForked</title>
   </head>
   <body>
-    Hello
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="logo" class="logo" />
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search over 1,000,000 recipes..."
+          />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+            Search
+          </button>
+        </form>
+
+        <div class="options">
+          <div class="options__box">
+            <svg class="options__icon">
+              <use href="img/sprite.svg#icon-open-book"></use>
+            </svg>
+            <span class="options__text">Add Recipe</span>
+          </div>
+          <div class="options__box">
+            <svg class="options__icon">
+              <use href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+
+            <span class="options__text">Bookmarks</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <nav class="side-nav">
+          <ul class="list">
+            &nbsp;
+          </ul>
+          <div class="legal">
+            &copy; Copyright by Jonas Schmedtmann. Use for learning or your
+            portfolio. Don't use to teach. Don't claim as your own.
+          </div>
+        </nav>
+        <main class="recipe-overview">
+          <div class="open-text">
+            <svg class="open-text__icon">
+              <use href="img/sprite.svg#icon-emoji-flirt"></use>
+            </svg>
+            <p class="open-text__words">
+              Start by searching for a recipe or an ingredient. Have fun!
+            </p>
+          </div>
+        </main>
+      </div>
+    </div>
   </body>
 </html>
